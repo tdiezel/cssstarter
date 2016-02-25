@@ -1,4 +1,4 @@
-# Gulp Starter
+# CSS Starter
 
 Starter CSS kit automated with gulp.
 
