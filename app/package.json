@@ -32,9 +32,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tdiezel/gulp_starter.git"
+    "url": "git+https://github.com/tdiezel/cssstarter.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/tdiezel/gulp_starter.git#readme"
+  "homepage": "https://github.com/tdiezel/cssstarter.git#readme"
 }
