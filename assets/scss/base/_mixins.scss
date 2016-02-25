@@ -1,0 +1,37 @@
+// Common mixins
+
+// Default transition to be applied on all elements
+// Usage : @include transtition() or @include transition('height', '100ms');
+@mixin transition($property: all, $time: $transition_time) {
+	transition: $property $time;
+}
+
+@mixin gradient-text() {
+	background: -webkit-linear-gradient(left, #214179 0%,#1867ae 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #214179;
+}
+
+// Vertical alignement using Flexbox
+// Don't forget to add ie9 hack to ie9.css
+@mixin flexbox {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox; // IE10
+	-ms-flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

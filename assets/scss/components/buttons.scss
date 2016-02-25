@@ -1,0 +1,27 @@
+%btn {
+	display: inline-block;
+	padding: 15px 20px;
+	background: color(primary);
+	color: #fff;
+	transition: background 200ms;
+	border: 1px color(primary) solid;
+	&:hover {
+		color: #fff;
+		border: 1px (darken(color(primary), 15%)) solid;
+		background: darken(color(primary), 15%);
+	}
+	&.invert {
+		color: color(primary);
+		background: #fff;
+		&:hover {
+			color: #fff;
+			background: color(primary);
+		}
+	}
+	&.large {
+		font-size: 1.4em;
+	}
+	&.small {
+		font-size: 0.8em;
+	}
+}

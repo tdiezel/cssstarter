@@ -1,0 +1,61 @@
+header {
+	background: #f2f2f2;
+	height: 100px; // temp
+	margin-bottom: 100px;
+}
+main {
+	@include container;
+	font-size: 1.4rem;
+}
+aside {
+	@include span(3);
+}
+footer {
+	margin-bottom: 40rem; // temporary
+	clear: both;
+}
+.content {
+	@include span(9);
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.9rem;
+	font-weight: 400;
+	margin-top: 3rem;
+}
+
+h3 {
+	color: #5a5a5a;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+a {
+	color: #5a5a5a;
+	text-decoration: none;
+	&:hover {
+		color: #000;
+	}
+}
+
+.button {
+	@extend %btn;
+	text-transform: uppercase;
+}
+
+.table {
+	@extend %table;
+}
+
+.tabs--code {
+	margin-top: 50px;
+}
+
+pre {
+	margin-top: 1.5rem!important;
+	margin-bottom: 1rem!important;
+}

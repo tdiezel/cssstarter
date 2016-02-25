@@ -1,0 +1,33 @@
+//// Mainly SASS maps functions
+
+// Get font function
+// Usage - font-family: font(family, weight);
+@function font($family) {
+
+	@return map-get($font-family, $family);
+
+	// @warn "Could not retrieved `#{$family}` in $font-family.";
+	// @return null;
+}
+
+// Get color function
+// Usage - color: color(main)
+@function color($color, $shade: null) {
+	@if $shade == null {
+		@return map-get($colors, $color);
+	} @else {
+		@return map-get(map-get($colors, $color), $shade);
+	}
+	// @warn "Could not retrieved `#{$color}` in $colors.";
+	// @return null;
+}
+
+// Get breakpoint function
+// Usage - @include breakpoint(xs) { ... }
+@mixin breakpoint($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+{
+  "url": "skibromont.local",
+  "paths": {
+    "assets": "../assets/",
+    "dist": "../dist/",
+    "scss": "scss/",
+    "css": "css/",
+    "js": "js/",
+    "img": "img/"
+  },
+  "fileName": {
+    "scss" : "styles.scss",
+    "css" : "styles.css",
+    "js" : "global.js"
+  },
+  "options": {
+    "autoprefixer": "last 3 versions",
+    "size" : {
+      "showFiles" : true
+    },
+    "uglify": {
+      "compress": {
+        "drop_console": true
+      }
+    },
+    "del": {
+      "force": true
+    }
+  },
+  "isDev": true,
+  "isBuild": false
+}
+
+

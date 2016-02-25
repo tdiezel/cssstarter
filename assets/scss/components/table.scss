@@ -1,0 +1,13 @@
+%table {
+	th, td {
+		padding: 10px 0 10px 10px;
+	} 
+	tbody tr{
+		&:nth-child(odd){
+			background-color: color(primary);
+		}
+		&:nth-child(even){
+			background-color: lighten(color(primary), 40%);
+		}
+	}
+}

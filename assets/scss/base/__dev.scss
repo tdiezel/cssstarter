@@ -1,0 +1,30 @@
+// Styles only when using gulp watch
+// Will not compile when using gulp build
+
+// Add visual breakpoints visual reference in the bottom right corner of the screen for easier debugging
+
+body {
+	&:before {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		content: 'xxs';
+		background: #f8333a;
+		color: #fff;
+		font-size: 15px;
+		padding: 10px;
+		z-index: 2000;
+		@include breakpoint(xs) {
+			content: 'xs';
+		}
+		@include breakpoint(sm) {
+			content: 'sm';
+		}
+		@include breakpoint(md) {
+			content: 'md';
+		}
+		@include breakpoint(lg) {
+			content: 'lg';
+		}
+	}
+}
